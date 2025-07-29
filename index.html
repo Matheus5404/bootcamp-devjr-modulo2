@@ -30,8 +30,9 @@
         .flex-container {
             display: flex;
             background-color: #b4585d;
-            justify-content: space-around;
-            padding: 20px;
+            color: #ffffff;
+            justify-content: space-between;
+            border-radius: 5px;
         }
 
         .header-title {
@@ -46,6 +47,67 @@
             font-size: 17.8px;
             font-weight: 500;
             margin-bottom: 15px;
+        }
+
+        .coluna-1, .coluna-2 {
+            width: 50%;
+            box-sizing: border-box;
+            padding: 20px;
+        }
+
+        .coluna-1 {
+            background-color: #f05c54;
+        }
+
+        .assinatura {
+            font-size: 20px;
+            font-weight: 200;
+            display: flex;
+            justify-content: center;
+            margin-top: 0;
+        }
+
+        .preco {
+            font-size: 26px;
+            font-weight: 500;
+            display: flex;
+            margin-bottom: 0;
+        }
+
+        .mes {
+            font-size: 16px;
+            font-weight: 400;
+            margin-left: 10px;
+            align-self: center;
+        }
+        
+        .cancele {
+            font-size: 16px;
+            font-weight: 400;
+            color: #ffffff;
+            text-align: left;
+            margin-top: 2px;
+        }
+
+        .botao-assinatura {
+            background-color: #eae2cf;
+            color: #f05c54;
+            border: none;
+            padding: 10px 75px;
+            font-size: 16px;
+            font-weight: 600;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 12px;
+            margin-bottom: 18px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+        }
+
+        .botao-assinatura:hover {
+            background-color: #d4c8b0;
+            color: #f05c54;
+            box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+            transform: scale(1.03);
         }
     </style>
 
@@ -67,10 +129,19 @@
             </div>
         </div>
         <div class="flex-container">
-            <div>
-                Coluna 1
+            <div class="coluna-1">
+                <div>
+                    <p class="assinatura">Assinatura mensal:</p>
+                </div>
+                <div>
+                    <p class="preco"><strong>R$ 99,99</strong> &nbsp; <em class="mes">por mês.</em></p>
+                    <p class="cancele">Cancele a qualquer momento.</p>
+                </div>
+                <div>
+                    <button class="botao-assinatura">Assine Agora</button>
+                </div>
             </div>
-            <div>
+            <div class="coluna-2">
                 Coluna 2
             </div>
         </div>
