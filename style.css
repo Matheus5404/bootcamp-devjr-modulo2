@@ -1,6 +1,10 @@
 body {
     background-color: #ffffff;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .container {
@@ -117,13 +121,16 @@ body {
         flex-direction: column;
     }
 
-    .coluna-1,
-    .coluna-2 {
+    .coluna-1,.coluna-2 {
         width: 100%;
         box-sizing: border-box;
     }
 
     .container {
         width: 95%;
+    }
+
+    .header {
+        padding: 1rem;
     }
 }
